@@ -2,13 +2,14 @@
 	"name": "react-dash",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "nodemon index.js",
-		"server": "node index.js",
+		"dev": "nodemon server.js",
+		"server": "node server.js",
 		"client": "npm start --prefix client",
-		"start": "concurrently \"npm run server\" \"npm run client\""
+		"start": "concurrently \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "cd client && npm install && npm run build"
 	},
 	"author": "Marty Six",
 	"license": "MIT",
