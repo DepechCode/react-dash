@@ -1,0 +1,93 @@
+#weather-container {
+	padding: 5px;
+	background-color: rgb(216, 213, 213);
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+#weather-header {
+	font-size: 32px;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+	background-color: rgb(216, 213, 213);
+	color: #000;
+	border-bottom: 2px solid black;
+}
+
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+.row-header {
+	text-align: left;
+}
+
+.col-8 {
+	padding-right: 0;
+}
+
+#header-row {
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+
+#card-container {
+	width: 300px;
+	min-height: 400px;
+	position: relative;
+}
+
+#date-header {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 2px solid black;
+}
+
+#current-temp {
+	margin: 0;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 38px;
+}
+
+#temp-icon-footer {
+	text-align: center;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#temp-icon {
+	padding: 2px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+#weather-body {
+	border-bottom: 2px solid black;
+}
+
+.forecast.col-12 {
+	padding: 2px;
+	list-style: none;
+	display: inline-block;
+	align-items: stretch;
+}
+
+.col-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

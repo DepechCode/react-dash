@@ -1,0 +1,25 @@
+/*
+Athelas bold used for headers in all caps 26pt
+Open Sans Condensed used as main text in content and fine print
+Open Sans Condensed Bold used in main text to highlight important words/sentences in content and headers and sub headers 22pt
+Open Sans used for main text and showroom names 12pt
+#E9BD1E colonial yellow
+#FED41D bright yellow
+#424242 charcoal grey*/
+
+@import url('https://fonts.cdnfonts.com/css/athelas');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap');
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#main-container {
+	padding: 15px;
+	background-color: darkgray;
+	height: 95vh;
+}
+
+.container {
+	margin-top: 1rem;
+}

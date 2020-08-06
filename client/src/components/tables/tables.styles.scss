@@ -1,0 +1,49 @@
+.table-responsive {
+	box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.5);
+	margin: 5px;
+}
+
+.table-header {
+	background-color: black;
+	color: goldenrod;
+}
+
+.table-row {
+	background-color: rgb(216, 213, 213);
+	color: #000;
+	font-weight: bold;
+}
+
+#cutter,
+#saw {
+	text-align: left;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+#cut-row-header,
+#saw-row-header {
+	text-align: left;
+	padding-left: 10px;
+}
+
+#saw-table,
+#cutter-table {
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#loading {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 48px;
+	font-weight: bolder;
+}
+
+td {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
