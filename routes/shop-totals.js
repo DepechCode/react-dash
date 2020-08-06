@@ -13,7 +13,7 @@ const formatNumber = (num) => {
 	return Number.parseFloat(num).toFixed(2) * 1;
 };
 
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
 	api.getView(1394)
 		.then((res) => res.data)
 		.then((data) =>
