@@ -1,4 +1,6 @@
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+	require('dotenv').config();
+}
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
@@ -12,8 +14,8 @@ const cutterRouter = require('./routes/cutter-totals');
 const sawRouter = require('./routes/saw-totals');
 const crewRouter = require('./routes/crews');
 
-app = express();
-port = process.env.PORT || 4000;
+const app = express();
+const port = process.env.PORT || 4000;
 
 app.use(cors({ origin: process.env.CORS_ORIGIN }));
 app.use(helmet());
@@ -30,7 +32,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 
 	app.get('*', (req, res) => {
-		res.sendFile(path.join(__dirname, '/client/build'));
+		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 	});
 }
 
